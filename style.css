@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* aplico reset al body */
+    font-family: "Josefin sans";
+    background-color: #d1d9ec;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+/* aplico estilo header */
+
+header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #2e1146;
+}
+
+
+
+/* aplico estilo a barra navegacion */
+
+.logo {
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-u-list {
+    list-style-type: none;
+
+}
+
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #707a8c;
+    font-size: 1.5em;
+
+}
+
+h1 {
+    padding-top: 2.5em;
+    font-size: 3em;
+    text-align: center;
+    color: #66481b;
+}
+
+/* aplico estilos a main home */
+.home-title {
+    padding-top: 30px;
+}
+
+
+
+.main-section-home {
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-section {
+    text-align: center;
+
+}
+
+
+
+.img-linkHome {
+    width: 200px;
+    border-radius: 5px;
+    border: 16px solid #66481b;
+    box-shadow: 5px 5px 40px #3b3838;
+    padding: 0.5em;
+    background-color: #ffffff;
+}
+
+/* aplico estilo a main about */
+.main-about .description-img {
+    width: 300px;
+    border-radius: 5px;
+    border: 16px solid #66481b;
+    box-shadow: 5px 5px 40px #3b3838;
+    padding: 0.5em;
+    background-color: #ffffff;
+
+
+}
+
+.main-about h1 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+
+.section-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.description {
+    margin: 2em;
+}
+
+
+/* aplico estilo tabla */
+.contenedor-tabla h2 {
+    color: #707a8c;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.contenedor-tabla .img-tabla {
+    width: 300px;
+    padding: 0.5em;
+    padding-bottom: 0.5em;
+    box-shadow: 5px 5px 40px #000000;
+
+
+}
+
+.contenedor-tabla {
+    width: 100%;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tabla-about {
+    border: 2px #000000;
+    border-collapse: collapse;
+}
+
+
+.contenedor-tabla th {
+    padding: 1em;
+    border: 2px solid #000000;
+    background-color: #707a8c;
+}
+
+
+.contenedor-tabla td {
+    padding: 1em;
+    margin: 0.5em;
+    border: 2px solid #000000;
+    background-color: #949090;
+
+}
+
+
+
+
+/* aplico estilo lista ordenada */
+.section-o-list {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.section-o-list h3 {
+    color: #707a8c;
+    text-align: center;
+    padding-bottom: 0.5em;
+
+}
+
+.o-list {
+
+    text-align: center;
+    color: #707a8c;
+
+
+}
+
+
+/* aplico estilo formulario */
+
+.contenedor-form {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.formulario {
+    color: #707a8c;
+    text-align: center;
+    background-color: #3d3d55;
+    padding-top: 3em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 300px;
+    height: 320px;
+    box-shadow: 7px 13px 37px #000000;
+
+}
+
+.field {
+    margin: 0.2em;
+}
+
+/* aplico estilo galerias */
+
+.gallery-img {
+    width: 100%;
+
+}
+
+
+.aves-title {
+    padding-top: 1em;
+}
+
+.contenedor-aves,
+.contenedor-fotoproducto {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-gap: 10px;
+
+}
+
+
+
+/* aplico estilo footer */
+
+.contenedor-footer {
+    width: 100%;
+    height: 150px;
+    background-color: #2e1146;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    color: #707a8c;
+
+
+
+
+}
+
+.redes-sociales {
+    font-size: 30px;
+    background-color: #2e1146;
+    color: #707a8c;
+}
+
+.copy {
+    text-align: center;
+
+
+}
+
+
+/* media queries */
+
+@media screen and (min-width:860px) {
+
+    /* Mqueries header */
+
+    header {
+        height: 100px;
+    }
+
+    /* Mqueries nav */
+
+    .logo {
+        padding-left: 2em;
+        padding-top: 0.5em;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+
+    .nav-list-item {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    /* Mqueries a main home */
+
+    .main-section-home {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .img-linkHome {
+        width: 400px;
+
+    }
+
+    /* aplico Mqueries a main about */
+    .section-about {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+    }
+
+    .description {
+        width: 400px;
+    }
+
+    /* Mqueries formulario */
+
+    .contenedor-form {
+        margin-top: 2.5em;
+    }
+
+    .contenedor-form {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+     /* aplico Mqueries a galeria de aves */
+
+    .contenedor-aves {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "img1 img2 img3"
+            "img1 img2 img4"
+            "img5 img6 img7"
+            "img8 img6 img7"
+            "img9 img10 img11";
+    }
+
+    .gallery-picture--s1 {
+        grid-area: img1;
+    }
+
+    .gallery-picture--s2 {
+        grid-area: img3;
+    }
+
+    .gallery-picture--s3 {
+        grid-area: img4;
+    }
+
+    .gallery-picture--s4 {
+        grid-area: img2;
+    }
+
+    .gallery-picture--s5 {
+        grid-area: img5;
+    }
+
+    .gallery-picture--s6 {
+        grid-area: img8;
+    }
+
+    .gallery-picture--s7 {
+        grid-area: img9;
+    }
+
+    .gallery-picture--s8 {
+        grid-area: img6;
+    }
+
+    .gallery-picture--s9 {
+        grid-area: img10;
+    }
+
+    .gallery-picture--s10 {
+        grid-area: img7;
+    }
+
+    .gallery-picture--s11 {
+        grid-area: img11;
+    }
+
+    /* aplico Mqueries a galeria de fotoproductos */
+
+    .contenedor-fotoproducto {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img4 img5"
+            "img4 img4 img5"
+            "img6 img7 img8";
+    }
+
+    .gallery-picture--p1 {
+        grid-area: img1;
+    }
+
+    .gallery-picture--p2 {
+        grid-area: img2;
+    }
+
+    .gallery-picture--p3 {
+        grid-area: img3;
+    }
+
+    .gallery-picture-ps4 {
+        grid-area: img6;
+    }
+
+    .gallery-picture--p5 {
+        grid-area: img4;
+    }
+
+    .gallery-picture--p6 {
+        grid-area: img7;
+    }
+
+    .gallery-picture--p7 {
+        grid-area: img5;
+    }
+
+    .gallery-picture--p8 {
+        grid-area: img8;
+    }
+
+
+}

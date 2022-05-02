@@ -221,18 +221,39 @@ h1 {
 /* aplico estilo a footer */
 
 .footer-title {
+
     padding-top: 1em;
-    color: #4b4c4e;
+    color: #fafbfc;
+    display: flex;
+    justify-content: center;
 
 }
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em; 
+}
+
 footer li {
     list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 footer a {
     text-decoration: none;
     color: #d1d9ec;
-    
+    display: flex;
+    justify-content: center;
+}
+
+.redes-soc {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
 }
 
 footer p {
@@ -241,6 +262,13 @@ footer p {
 
 footer i {
     font-size: 40px;
+
+}
+
+.footer-logo {
+    width: 15rem;
+
+
 }
 
 

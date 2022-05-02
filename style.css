@@ -170,31 +170,39 @@ h1 {
 
 /* aplico estilo formulario */
 
-.contenedor-form {
-    width: 100%;
-    height: 400px;
+
+.intro-contacto {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-}
-
-.formulario {
+    padding-left: 0.5em;
+    padding-top: 1em;
     color: #707a8c;
-    text-align: center;
-    background-color: #3d3d55;
-    padding-top: 3em;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 300px;
-    height: 320px;
-    box-shadow: 7px 13px 37px #000000;
-
 }
 
-.field {
-    margin: 0.2em;
+.intro-contacto p {
+    font-size: larger;
 }
+
+form {
+    width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+  
+}
+
+form p {
+    font-size: 0.5em;
+}
+.mb-3 {
+    width: 20rem;
+}
+
 
 /* aplico estilo galerias */
 
@@ -248,12 +256,6 @@ footer a {
     color: #d1d9ec;
     display: flex;
     justify-content: center;
-}
-
-.redes-soc {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
 }
 
 footer p {

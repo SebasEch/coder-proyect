@@ -18,6 +18,10 @@ body {
 }
 
 /* aplico estilo a nav */
+header a {
+    color: #d1d9ec !important;
+}
+
 
 .logo {
     width: 12rem;

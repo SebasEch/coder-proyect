@@ -241,12 +241,21 @@ form p {
 
 /* aplico estilo a footer */
 
+footer {
+    background-color: #50497c;
+}
+
+.mapa {
+    margin: 0px auto;
+}
+
 .footer-title {
 
     padding-top: 1em;
     color: #fafbfc;
     display: flex;
     justify-content: center;
+    padding-left: 1em;
 
 }
 .redes-sociales {
@@ -254,6 +263,7 @@ form p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-left: 1.5em;
     gap: 1em; 
 }
 

@@ -32,7 +32,7 @@ nav{
 @keyframes movimiento {
     0% { transform: translatex(100%);
         opacity: 0;
-        transform: rotateZ(180deg); 
+        transform: rotateZ(180deg);
     }
 
     50% { transform: translatex(1%);
@@ -79,7 +79,7 @@ h1 {
     box-shadow: 5px 5px 40px #3b3838;
     padding: 0.5em;
     background-color: #ffffff;
-    transition: transform 0.5s ;   
+    transition: transform 0.5s ;
 }
 .contenedor-section img:hover {
     filter: blur(2px);
@@ -255,7 +255,7 @@ footer {
     color: #fafbfc;
     display: flex;
     justify-content: center;
-    padding-left: 1em;
+    /* padding-left: 1em; */
 
 }
 .redes-sociales {
@@ -263,12 +263,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 1.5em;
-    gap: 1em; 
+    padding-left: 0.5em;
+    gap: 1em;
 }
 
 footer li {
     list-style-type: none;
+    padding-right: 1.5em;
 }
 
 footer a {
@@ -279,7 +280,7 @@ footer a {
 }
 
 footer p {
-    color: aliceblue;
+    color: #d1d9ec;
 }
 
 footer i {
@@ -320,7 +321,7 @@ footer i {
     }
 
     .description {
-        width: 400px;
+        width: 40%;
     }
 
     /* Mqueries formulario */
@@ -334,7 +335,7 @@ footer i {
         height: 400px;
         display: flex;
         align-items: center;
-    
+
     }
 
      /* aplico Mqueries a galeria de aves */

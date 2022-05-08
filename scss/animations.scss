@@ -1,0 +1,11 @@
+@keyframes backflip {
+    0% { transform: translatex(100%);
+        opacity: 0;
+        transform: rotateZ(180deg);
+    }
+
+    50% { transform: translatex(1%);
+        opacity: 100;
+        transform: rotateZ(0deg);
+}
+}

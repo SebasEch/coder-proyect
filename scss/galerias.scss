@@ -1,0 +1,18 @@
+main {
+    section {
+        .pictures-container {
+            width: 100%;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1 1fr;
+            grid-gap: 10px;
+
+            figure {
+                .gallery-img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

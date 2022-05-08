@@ -1,0 +1,57 @@
+.main-about {
+    .section-about {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .description {
+            margin: 2em;
+
+        }
+
+        .description-img {
+            width: 300px;
+            border-radius: 5px;
+            border: $border;
+            box-shadow: $box;
+            padding: 0.5em;
+            background-color: #ffffff;
+        }
+    }
+
+    .section-tabla {
+        width: 100%;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: $color-title;
+            text-align: center;
+            padding-top: 3em;
+            padding-bottom: 1em;
+        }
+        .tabla-about {
+            th{
+                padding: 1em;
+                border: 2px solid #000000;
+                background-color: $bgcolor;
+                color: $color-link;
+                text-align: center;
+            }
+
+            td{
+                padding: 1em;
+                margin: 0.5em;
+                border: 2px solid #000000;
+                background-color: #949090;
+            }
+
+
+
+        }
+    }
+
+}

@@ -1,0 +1,33 @@
+main {
+    p {
+        font-size: 0.5em;
+    }
+
+    form {
+        width: 100%;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+
+        .intro-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0.5em;
+            padding-top: 1em;
+            color: $color-title;
+
+            p {
+                font-size: larger;
+            }
+        }
+
+        .mb-3 {
+            width: 20rem;
+        }
+    }
+}

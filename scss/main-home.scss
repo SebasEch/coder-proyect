@@ -1,0 +1,30 @@
+main {
+.main-section-home {
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-section {
+    text-align: center;
+    h3 {
+        padding-top: 0.5em;
+        color: $color-title;
+    }
+    .img-linkHome {
+        width: 200px;
+        border-radius: 15px;
+        border: $border;
+        box-shadow: $box;
+        padding: 0.5em;
+        background-color: #ffffff;
+        transition: transform 0.5s;
+    }
+    &:hover {
+        filter: blur(2px);
+        transform: rotate(10deg);
+    }
+}
+
+}

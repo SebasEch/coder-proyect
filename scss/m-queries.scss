@@ -1,0 +1,136 @@
+@media screen and (min-width:860px) {
+
+
+    // main home
+
+    main {
+        .main-section-home {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .img-linkHome {
+                width: 400px;
+            }
+        }
+    }
+
+
+    // estilos mian about
+
+    .main-about {
+        .section-about {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 2em;
+
+            .description {
+                width: 40%;
+            }
+        }
+    }
+
+
+    // estilos galeria aves
+
+    main {
+        section {
+            .aves {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "img1 img2 img3"
+                    "img1 img2 img4"
+                    "img5 img6 img7"
+                    "img8 img6 img7"
+                    "img9 img10 img11";
+
+                .gallery-picture--s1 {
+                    grid-area: img1;
+                }
+
+                .gallery-picture--s2 {
+                    grid-area: img3;
+                }
+
+                .gallery-picture--s3 {
+                    grid-area: img4;
+                }
+
+                .gallery-picture--s4 {
+                    grid-area: img2;
+                }
+
+                .gallery-picture--s5 {
+                    grid-area: img5;
+                }
+
+                .gallery-picture--s6 {
+                    grid-area: img8;
+                }
+
+                .gallery-picture--s7 {
+                    grid-area: img9;
+                }
+
+                .gallery-picture--s8 {
+                    grid-area: img6;
+                }
+
+                .gallery-picture--s9 {
+                    grid-area: img10;
+                }
+
+                .gallery-picture--s10 {
+                    grid-area: img7;
+                }
+
+                .gallery-picture--s11 {
+                    grid-area: img11;
+                }
+            }
+
+            .productos {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "img1 img2 img3"
+                    "img4 img4 img5"
+                    "img4 img4 img5"
+                    "img6 img7 img8";
+
+
+                .gallery-picture--p1 {
+                    grid-area: img1;
+                }
+
+                .gallery-picture--p2 {
+                    grid-area: img2;
+                }
+
+                .gallery-picture--p3 {
+                    grid-area: img3;
+                }
+
+                .gallery-picture-ps4 {
+                    grid-area: img6;
+                }
+
+                .gallery-picture--p5 {
+                    grid-area: img4;
+                }
+
+                .gallery-picture--p6 {
+                    grid-area: img7;
+                }
+
+                .gallery-picture--p7 {
+                    grid-area: img5;
+                }
+
+                .gallery-picture--p8 {
+                    grid-area: img8;
+                }
+
+            }
+        }
+    }
+}

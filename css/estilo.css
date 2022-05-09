@@ -54,6 +54,8 @@ main .contenedor-section {
   align-items: center; }
   .main-about .section-about .description {
     margin: 2em; }
+    .main-about .section-about .description p {
+      font-size: 1em; }
   .main-about .section-about .description-img {
     width: 300px;
     border-radius: 5px;

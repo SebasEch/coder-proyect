@@ -10,13 +10,17 @@
 
             p {
                 font-size: 1em;
+                background-color: $bgcolor;
+                border-radius: .5rem;
+                padding: 0.5em;
+                color: $color-link;
 
             }
 
         }
 
         .description-img {
-            width: 300px;
+            width: 400px;
             border-radius: 5px;
             border: $border;
             box-shadow: $box;
@@ -33,10 +37,13 @@
         align-items: center;
 
         h2 {
-            color: $color-title;
             text-align: center;
-            padding-top: 3em;
-            padding-bottom: 1em;
+            padding: 0.5em;
+            color: $color-link;
+            border-radius: 5rem;
+            background-color: $bgcolor-second;
+            margin-top: 2em;
+            margin-bottom: 1em;
         }
         .tabla-about {
             th{

@@ -16,7 +16,7 @@
 
 body {
   font-family: "Josefin sans";
-  background-color: #d1d9ec;
+  background-image: url(../imagenes/varying-stripes.svg);
   margin: 0;
   padding: 0;
   display: grid;
@@ -24,10 +24,13 @@ body {
   grid-template-rows: auto 1fr auto; }
 
 h1 {
-  margin-top: 1em;
-  font-size: 3em;
   text-align: center;
-  color: #707a8c; }
+  padding: 0.5em;
+  color: #fafbfc;
+  border-radius: 15px;
+  background-color: #4b107c;
+  margin-top: 2em;
+  margin-bottom: 1em; }
 
 nav {
   background-color: #50497c; }
@@ -89,7 +92,7 @@ main .contenedor-section {
   text-align: center; }
   main .contenedor-section h3 {
     padding-top: 0.5em;
-    color: #707a8c; }
+    color: #473657; }
   main .contenedor-section .img-linkHome {
     width: 200px;
     border-radius: 15px;
@@ -110,9 +113,13 @@ main .contenedor-section {
   .main-about .section-about .description {
     margin: 2em; }
     .main-about .section-about .description p {
-      font-size: 1em; }
+      font-size: 1em;
+      background-color: #50497c;
+      border-radius: .5rem;
+      padding: 0.5em;
+      color: #fafbfc; }
   .main-about .section-about .description-img {
-    width: 300px;
+    width: 400px;
     border-radius: 5px;
     border: 16px solid #58585a;
     box-shadow: 8px 8px 30px #50497c;
@@ -126,10 +133,13 @@ main .contenedor-section {
   flex-direction: column;
   align-items: center; }
   .main-about .section-tabla h2 {
-    color: #707a8c;
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 1em; }
+    padding: 0.5em;
+    color: #fafbfc;
+    border-radius: 5rem;
+    background-color: #4b107c;
+    margin-top: 2em;
+    margin-bottom: 1em; }
   .main-about .section-tabla .tabla-about th {
     padding: 1em;
     border: 2px solid #000000;
@@ -160,11 +170,16 @@ main form {
     align-items: center;
     padding-left: 0.5em;
     padding-top: 1em;
-    color: #707a8c; }
+    color: #473657; }
     main form .intro-contacto p {
       font-size: larger; }
   main form .mb-3 {
     width: 20rem; }
+
+main .aves-title {
+  width: 9em;
+  margin: 1em auto;
+  border-radius: 5rem; }
 
 main section .pictures-container {
   width: 100%;

@@ -10,7 +10,6 @@ main {
     text-align: center;
     h3 {
         padding-top: 0.5em;
-        color: $color-title;
     }
     .img-linkHome {
         width: 200px;
@@ -18,13 +17,16 @@ main {
         border: $border;
         box-shadow: $box;
         padding: 0.5em;
-        background-color: #ffffff;
-        transition: transform 0.5s;
+        background-color: $bgcolor-secondary;
+
+        &:hover {
+            filter: blur(2px);
+    
+        }
+
+    
     }
-    &:hover {
-        filter: blur(2px);
-        transform: rotate(10deg);
-    }
+
 }
 
 }

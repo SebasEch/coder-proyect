@@ -1,8 +1,19 @@
 
 // Variables
-$bgcolor: #50497c;
-$bgcolor-second: rgb(75, 16, 124);
-$color-title: #473657;
-$color-link: #fafbfc;
+$bgcolor: #6d4254;
+$bgcolorb: #ffc99dbd;
+$bgcolor-secondary: #fff;
 $border: 16px solid #58585a;
 $box: 8px 8px 30px #50497c;
+
+// Mapas 
+
+$colors: (
+    txtcolora: #c9c0f0,
+    txtcolorb: #8a4764
+);
+
+@each $item, $color in $colors {
+    .color-#{$item} {color: $color};
+    
+}

@@ -1,3 +1,9 @@
+.color-txtcolora {
+  color: #c9c0f0; }
+
+.color-txtcolorb {
+  color: #8a4764; }
+
 @keyframes backflip {
   0% {
     transform: translatex(100%);
@@ -16,7 +22,7 @@
 
 body {
   font-family: "Josefin sans";
-  background-image: url(../imagenes/varying-stripes.svg);
+  background-color: #ffc99dbd;
   margin: 0;
   padding: 0;
   display: grid;
@@ -25,61 +31,55 @@ body {
 
 h1 {
   text-align: center;
-  padding: 0.5em;
-  color: #fafbfc;
-  border-radius: 15px;
-  background-color: #4b107c;
-  margin-top: 2em;
-  margin-bottom: 1em; }
+  margin: 2.5em auto; }
 
-nav {
-  background-color: #50497c; }
-  nav .logo {
+header nav {
+  background-color: #6d4254; }
+  header nav .logo {
     width: 12rem;
     animation-name: backflip;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-delay: 0.2s; }
-    nav .logo:hover {
+    header nav .logo:hover {
       transform: rotateZ(-3deg); }
-  nav .nav-item {
+  header nav .nav-item {
     font-size: 1.2em; }
 
 footer {
-  background-color: #50497c; }
-  footer .rowF1 .footer-title {
-    color: #fafbfc;
-    padding-top: 1em;
-    display: flex;
-    justify-content: center; }
-  footer .rowF1 li {
-    list-style-type: none;
-    padding-right: 1.5em; }
-    footer .rowF1 li a {
-      text-decoration: none;
-      color: #fafbfc;
+  background-image: url(../imagenes/wfooter.svg);
+  background-size: cover;
+  margin-top: 10rem; }
+  footer .rowF1 {
+    margin-top: 10rem; }
+    footer .rowF1 .footer-title {
+      padding-top: 1em;
       display: flex;
       justify-content: center; }
-      footer .rowF1 li a:hover {
-        color: #d1d3da; }
-  footer .rowF1 .redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 0.5em;
-    gap: 1em; }
-    footer .rowF1 .redes-sociales i {
-      font-size: 40px;
-      color: #fafbfc; }
-      footer .rowF1 .redes-sociales i:hover {
-        color: #d1d3da; }
-  footer .rowF1 .footer-logo {
-    width: 15rem; }
-    footer .rowF1 .footer-logo:hover {
-      width: 17rem; }
-  footer .rowF2 p {
-    color: #fafbfc; }
+    footer .rowF1 li {
+      list-style-type: none;
+      padding-right: 1.5em; }
+      footer .rowF1 li a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center; }
+        footer .rowF1 li a:hover {
+          color: #d1d3da; }
+    footer .rowF1 .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-left: 0.5em;
+      gap: 1em; }
+      footer .rowF1 .redes-sociales i {
+        font-size: 40px; }
+        footer .rowF1 .redes-sociales i:hover {
+          color: #d1d3da; }
+    footer .rowF1 .footer-logo {
+      width: 15rem; }
+      footer .rowF1 .footer-logo:hover {
+        width: 17rem; }
 
 main .main-section-home {
   padding-top: 2.5em;
@@ -91,19 +91,16 @@ main .main-section-home {
 main .contenedor-section {
   text-align: center; }
   main .contenedor-section h3 {
-    padding-top: 0.5em;
-    color: #473657; }
+    padding-top: 0.5em; }
   main .contenedor-section .img-linkHome {
     width: 200px;
     border-radius: 15px;
     border: 16px solid #58585a;
     box-shadow: 8px 8px 30px #50497c;
     padding: 0.5em;
-    background-color: #ffffff;
-    transition: transform 0.5s; }
-  main .contenedor-section:hover {
-    filter: blur(2px);
-    transform: rotate(10deg); }
+    background-color: #fff; }
+    main .contenedor-section .img-linkHome:hover {
+      filter: blur(2px); }
 
 .main-about .section-about {
   width: 100%;
@@ -114,10 +111,8 @@ main .contenedor-section {
     margin: 2em; }
     .main-about .section-about .description p {
       font-size: 1em;
-      background-color: #50497c;
       border-radius: .5rem;
-      padding: 0.5em;
-      color: #fafbfc; }
+      padding: 0.5em; }
   .main-about .section-about .description-img {
     width: 400px;
     border-radius: 5px;
@@ -135,16 +130,12 @@ main .contenedor-section {
   .main-about .section-tabla h2 {
     text-align: center;
     padding: 0.5em;
-    color: #fafbfc;
     border-radius: 5rem;
-    background-color: #4b107c;
     margin-top: 2em;
     margin-bottom: 1em; }
   .main-about .section-tabla .tabla-about th {
     padding: 1em;
     border: 2px solid #000000;
-    background-color: #50497c;
-    color: #fafbfc;
     text-align: center; }
   .main-about .section-tabla .tabla-about td {
     padding: 1em;
@@ -169,8 +160,7 @@ main form {
     justify-content: center;
     align-items: center;
     padding-left: 0.5em;
-    padding-top: 1em;
-    color: #473657; }
+    padding-top: 1em; }
     main form .intro-contacto p {
       font-size: larger; }
   main form .mb-3 {

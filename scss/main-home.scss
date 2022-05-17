@@ -1,3 +1,6 @@
+
+// Estilos Home
+
 main {
 .main-section-home {
     padding-top: 2.5em;
@@ -11,13 +14,10 @@ main {
     h3 {
         padding-top: 0.5em;
     }
-    .img-linkHome {
-        width: 200px;
-        border-radius: 15px;
-        border: $border;
-        box-shadow: $box;
-        padding: 0.5em;
-        background-color: $bgcolor-secondary;
+    .frameHome {
+
+        @include box;
+
 
         &:hover {
             filter: blur(2px);

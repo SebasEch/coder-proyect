@@ -1,5 +1,6 @@
 
 // Variables
+
 $bgcolor: #6d4254;
 $bgcolorb: #ffc99dbd;
 $bgcolor-secondary: #fff;
@@ -7,6 +8,8 @@ $border: 16px solid #58585a;
 $box: 8px 8px 30px #50497c;
 
 // Mapas 
+
+// Mapas color de textos, links y titulos
 
 $colors: (
     txtcolora: #c9c0f0,
@@ -16,4 +19,28 @@ $colors: (
 @each $item, $color in $colors {
     .color-#{$item} {color: $color};
     
+}
+
+// mixins 
+
+@mixin box {
+    width: 200px;
+    border-radius: 15px;
+    border: $border;
+    box-shadow: $box;
+    padding: 0.5em;
+    background-color: $bgcolor-secondary;
+    
+}
+
+// Extends 
+
+.img-frame {
+    width: 200px;
+    border-radius: 15px;
+    border: $border;
+    box-shadow: $box;
+    padding: 0.5em;
+    background-color: $bgcolor-secondary;
+
 }

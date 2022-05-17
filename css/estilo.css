@@ -4,6 +4,14 @@
 .color-txtcolorb {
   color: #8a4764; }
 
+.img-frame, .main-about .section-about .frameAbout {
+  width: 200px;
+  border-radius: 15px;
+  border: 16px solid #58585a;
+  box-shadow: 8px 8px 30px #50497c;
+  padding: 0.5em;
+  background-color: #fff; }
+
 @keyframes backflip {
   0% {
     transform: translatex(100%);
@@ -92,14 +100,14 @@ main .contenedor-section {
   text-align: center; }
   main .contenedor-section h3 {
     padding-top: 0.5em; }
-  main .contenedor-section .img-linkHome {
+  main .contenedor-section .frameHome {
     width: 200px;
     border-radius: 15px;
     border: 16px solid #58585a;
     box-shadow: 8px 8px 30px #50497c;
     padding: 0.5em;
     background-color: #fff; }
-    main .contenedor-section .img-linkHome:hover {
+    main .contenedor-section .frameHome:hover {
       filter: blur(2px); }
 
 .main-about .section-about {
@@ -113,31 +121,26 @@ main .contenedor-section {
       font-size: 1em;
       border-radius: .5rem;
       padding: 0.5em; }
-  .main-about .section-about .description-img {
-    width: 400px;
-    border-radius: 5px;
-    border: 16px solid #58585a;
-    box-shadow: 8px 8px 30px #50497c;
-    padding: 0.5em;
-    background-color: #ffffff; }
+  .main-about .section-about .frameAbout {
+    width: 300px; }
 
-.main-about .section-tabla {
+.section-tabla {
   width: 100%;
   padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main-about .section-tabla h2 {
+  .section-tabla h2 {
     text-align: center;
     padding: 0.5em;
     border-radius: 5rem;
     margin-top: 2em;
     margin-bottom: 1em; }
-  .main-about .section-tabla .tabla-about th {
+  .section-tabla .tabla-about th {
     padding: 1em;
     border: 2px solid #000000;
     text-align: center; }
-  .main-about .section-tabla .tabla-about td {
+  .section-tabla .tabla-about td {
     padding: 1em;
     margin: 0.5em;
     border: 2px solid #000000;
@@ -184,7 +187,7 @@ main section .pictures-container {
   main .main-section-home {
     flex-direction: row;
     justify-content: space-around; }
-    main .main-section-home .img-linkHome {
+    main .main-section-home .frameHome {
       width: 400px; }
   .main-about .section-about {
     flex-direction: row;

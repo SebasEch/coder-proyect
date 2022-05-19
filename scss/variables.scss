@@ -4,8 +4,8 @@
 $bgcolor: #6d4254;
 $bgcolorb: #ffc99dbd;
 $bgcolor-secondary: #fff;
-$border: 16px solid #58585a;
-$box: 8px 8px 30px #50497c;
+$border: 10px solid #58585a;
+$box: 4px 4px 20px #6d4254;
 
 // Mapas 
 
@@ -28,7 +28,7 @@ $colors: (
     border-radius: 15px;
     border: $border;
     box-shadow: $box;
-    padding: 0.5em;
+    padding: 2em;
     background-color: $bgcolor-secondary;
     
 }
@@ -40,7 +40,7 @@ $colors: (
     border-radius: 15px;
     border: $border;
     box-shadow: $box;
-    padding: 0.5em;
+    padding: 2em;
     background-color: $bgcolor-secondary;
 
 }

@@ -7,9 +7,9 @@
 .img-frame, .main-about .section-about .frameAbout {
   width: 200px;
   border-radius: 15px;
-  border: 16px solid #58585a;
-  box-shadow: 8px 8px 30px #50497c;
-  padding: 0.5em;
+  border: 10px solid #58585a;
+  box-shadow: 4px 4px 20px #6d4254;
+  padding: 2em;
   background-color: #fff; }
 
 @keyframes backflip {
@@ -53,6 +53,8 @@ header nav {
       transform: rotateZ(-3deg); }
   header nav .nav-item {
     font-size: 1.2em; }
+  header nav .dropdown-menu {
+    background-color: #ffc99dbd; }
 
 footer {
   background-image: url(../imagenes/wfooter.svg);
@@ -103,9 +105,9 @@ main .contenedor-section {
   main .contenedor-section .frameHome {
     width: 200px;
     border-radius: 15px;
-    border: 16px solid #58585a;
-    box-shadow: 8px 8px 30px #50497c;
-    padding: 0.5em;
+    border: 10px solid #58585a;
+    box-shadow: 4px 4px 20px #6d4254;
+    padding: 2em;
     background-color: #fff; }
     main .contenedor-section .frameHome:hover {
       filter: blur(2px); }

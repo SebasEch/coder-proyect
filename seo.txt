@@ -1,0 +1,15 @@
+Redimensione imagenes para que pesen algo menos (anteriormente ya las habia comprimido),
+ademas les agregue el atributo LOADING LAZY
+Agregue META KEYWORDS generales en todos los html, plus algunos personalizados en los que asi lo requerian.
+Agregie META DESCRIPTION customizados para cada html.
+Agregue a meta viewport un MAXIMUM SCALE 3.0
+Cambie el TITLE en todos los html: nombre completo + pagina en la que se encuentra el usuario (anteriormente lo teniea abreviado)
+Organice carpetas y sus respectivos rutas
+Hice sitemap y adjunto xml al repositorio.
+
+
+
+
+
+
+

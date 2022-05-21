@@ -260,11 +260,7 @@ main section .pictures-container {
       width: 40%; }
   main section .aves {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3"
- "img1 img2 img4"
- "img5 img6 img7"
- "img8 img6 img7"
- "img9 img10 img11"; }
+    grid-template-areas: "img1 img2 img3" "img1 img2 img4" "img5 img6 img7" "img8 img6 img7" "img9 img10 img11"; }
     main section .aves .gallery-picture--s1 {
       grid-area: img1; }
     main section .aves .gallery-picture--s2 {
@@ -289,10 +285,7 @@ main section .pictures-container {
       grid-area: img11; }
   main section .productos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3"
- "img4 img4 img5"
- "img4 img4 img5"
- "img6 img7 img8"; }
+    grid-template-areas: "img1 img2 img3" "img4 img4 img5" "img4 img4 img5" "img6 img7 img8"; }
     main section .productos .gallery-picture--p1 {
       grid-area: img1; }
     main section .productos .gallery-picture--p2 {

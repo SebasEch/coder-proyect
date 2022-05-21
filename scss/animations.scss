@@ -9,3 +9,12 @@
         transform: rotateZ(0deg);
 }
 }
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}

@@ -8,7 +8,7 @@
   width: 200px;
   border-radius: 15px;
   border: 10px solid #58585a;
-  box-shadow: 4px 4px 20px #6d4254;
+  box-shadow: 0px 4px 25px #383636;
   padding: 2em;
   background-color: #fff; }
 
@@ -21,6 +21,12 @@
     transform: translatex(1%);
     opacity: 100;
     transform: rotateZ(0deg); } }
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
 
 /* ESTILO BODY  */
 * {
@@ -97,20 +103,73 @@ main .main-section-home {
   gap: 10px;
   display: flex;
   flex-direction: column; }
+  main .main-section-home .contenedor-section {
+    text-align: center; }
+    main .main-section-home .contenedor-section h3 {
+      padding-top: 0.5em; }
+    main .main-section-home .contenedor-section .frameHome {
+      width: 350px;
+      border-radius: 15px;
+      border: 10px solid #58585a;
+      box-shadow: 0px 4px 25px #383636;
+      padding: 2em;
+      background-color: #fff; }
+      main .main-section-home .contenedor-section .frameHome:hover {
+        filter: blur(2px); }
 
-main .contenedor-section {
+main .carrousel h2 {
   text-align: center; }
-  main .contenedor-section h3 {
-    padding-top: 0.5em; }
-  main .contenedor-section .frameHome {
-    width: 200px;
-    border-radius: 15px;
-    border: 10px solid #58585a;
-    box-shadow: 4px 4px 20px #6d4254;
-    padding: 2em;
-    background-color: #fff; }
-    main .contenedor-section .frameHome:hover {
-      filter: blur(2px); }
+
+main .carrousel .content-all {
+  width: 245px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  perspective: 1500px;
+  position: relative; }
+  main .carrousel .content-all .content-carrousel {
+    width: 100%;
+    position: absolute;
+    animation-name: rotar;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d; }
+    main .carrousel .content-all .content-carrousel:hover {
+      animation-play-state: paused;
+      cursor: pointer; }
+    main .carrousel .content-all .content-carrousel figure {
+      width: 100%;
+      position: absolute;
+      box-shadow: 0px 4px 25px #383636;
+      transition: all 0.2s; }
+      main .carrousel .content-all .content-carrousel figure:hover {
+        box-shadow: 0px 0px 0px;
+        transition: all 0.2s; }
+      main .carrousel .content-all .content-carrousel figure img {
+        width: 100%;
+        transition: all 0.5s; }
+        main .carrousel .content-all .content-carrousel figure img:hover {
+          transform: scale(1.2);
+          transition: all 0.5s; }
+      main .carrousel .content-all .content-carrousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(2) {
+        transform: rotateY(45deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(3) {
+        transform: rotateY(90deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(4) {
+        transform: rotateY(135deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(5) {
+        transform: rotateY(180deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(6) {
+        transform: rotateY(225deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(7) {
+        transform: rotateY(270deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(8) {
+        transform: rotateY(315deg) translateZ(300px); }
+      main .carrousel .content-all .content-carrousel figure:nth-child(9) {
+        transform: rotateY(360deg) translateZ(300px); }
 
 .main-about .section-about {
   width: 100%;
@@ -149,7 +208,8 @@ main .contenedor-section {
     background-color: #949090; }
 
 main p {
-  font-size: 0.5em; }
+  font-size: 0.5em;
+  text-align: center; }
 
 main form {
   width: 100%;
@@ -200,7 +260,11 @@ main section .pictures-container {
       width: 40%; }
   main section .aves {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3" "img1 img2 img4" "img5 img6 img7" "img8 img6 img7" "img9 img10 img11"; }
+    grid-template-areas: "img1 img2 img3"
+ "img1 img2 img4"
+ "img5 img6 img7"
+ "img8 img6 img7"
+ "img9 img10 img11"; }
     main section .aves .gallery-picture--s1 {
       grid-area: img1; }
     main section .aves .gallery-picture--s2 {
@@ -225,7 +289,10 @@ main section .pictures-container {
       grid-area: img11; }
   main section .productos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3" "img4 img4 img5" "img4 img4 img5" "img6 img7 img8"; }
+    grid-template-areas: "img1 img2 img3"
+ "img4 img4 img5"
+ "img4 img4 img5"
+ "img6 img7 img8"; }
     main section .productos .gallery-picture--p1 {
       grid-area: img1; }
     main section .productos .gallery-picture--p2 {

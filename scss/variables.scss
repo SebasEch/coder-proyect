@@ -5,7 +5,7 @@ $bgcolor: #6d4254;
 $bgcolorb: #ffc99dbd;
 $bgcolor-secondary: #fff;
 $border: 10px solid #58585a;
-$box: 4px 4px 20px #6d4254;
+$box: 0px 4px 25px #383636;
 
 // Mapas 
 
@@ -24,7 +24,7 @@ $colors: (
 // mixins 
 
 @mixin box {
-    width: 200px;
+    width: 350px;
     border-radius: 15px;
     border: $border;
     box-shadow: $box;

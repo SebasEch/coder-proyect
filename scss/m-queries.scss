@@ -8,6 +8,10 @@
             flex-direction: row;
             justify-content: space-around;
 
+            .contenedor-b {
+                margin-top: 0;
+            }
+
             .frameHome {
                 width: 400px;
             }
@@ -25,7 +29,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            padding: 2em;
+            padding: $r;
 
             .description {
                 width: 40%;

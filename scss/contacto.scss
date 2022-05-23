@@ -1,33 +1,37 @@
 main {
-    p {
-        font-size: 0.5em;
-        text-align: center;
-    }
 
     form {
         width: 100%;
-        padding-top: 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 2em;
+        padding-bottom: $r;
 
         .intro-contacto {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-left: 0.5em;
-            padding-top: 1em;
+            padding-left: $r - 1.5;
+            padding-top: $r - 1;
 
             p {
-                font-size: larger;
+                font-size: $r - 0.5;
+                text-align: center;
+                background-color: $bgcolorb;
+               
+
+        
             }
         }
 
         .mb-3 {
             width: 20rem;
+
+            .btn {
+                background-color: #fff;
+            }
         }
     }
 }

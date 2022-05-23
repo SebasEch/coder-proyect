@@ -21,7 +21,7 @@ $a: 2px;
 
 $colors: (
     txtcolora: #000000,
-    txtcolorb: #4d484a
+    txtcolorb: #ffffff
 );
 
 @each $item, $color in $colors {

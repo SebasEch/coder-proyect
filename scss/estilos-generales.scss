@@ -21,8 +21,12 @@ body {
 h1 {
     text-align: center;
     margin: $r auto;
+    margin-top: 0;
+    margin-bottom: $r - 1.5;
     font-family: "Archivo Black";
     font-size: $r*3;
+    text-shadow: 2px 8px 20px #525253;
+
 
 }
 

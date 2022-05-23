@@ -2,7 +2,7 @@
   color: #000000; }
 
 .color-txtcolorb {
-  color: #4d484a; }
+  color: #ffffff; }
 
 .img-frame, .main-about .section-about .frameAbout {
   width: 200px;
@@ -46,8 +46,11 @@ body {
 h1 {
   text-align: center;
   margin: 2em auto;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   font-family: "Archivo Black";
-  font-size: 6em; }
+  font-size: 6em;
+  text-shadow: 2px 8px 20px #525253; }
 
 hr {
   width: 30%;
@@ -107,24 +110,28 @@ footer {
         transition: all 0.3s; }
 
 main .main-section-home {
-  padding-top: 2.5em;
-  padding-bottom: 5em;
-  gap: 10px;
+  padding-top: 2em;
+  padding-bottom: 4em;
   display: flex;
   flex-direction: column; }
   main .main-section-home .contenedor-section {
     text-align: center; }
     main .main-section-home .contenedor-section h3 {
-      padding-top: 0.5em; }
+      padding-top: 1em;
+      font-size: 2em; }
     main .main-section-home .contenedor-section .frameHome {
       width: 350px;
       border-radius: 16px;
       border: 10px solid #58585a;
       box-shadow: 0px 4px 25px #383636;
       padding: 2em;
-      background-color: #fff; }
+      background-color: #fff;
+      transition: all 0.3s; }
       main .main-section-home .contenedor-section .frameHome:hover {
-        filter: blur(2px); }
+        filter: blur(2px);
+        transition: all 0.3s; }
+  main .main-section-home .contenedor-b {
+    margin-top: 6em; }
 
 main .carrousel {
   display: none; }
@@ -217,13 +224,8 @@ main .carrousel {
     border: 2px solid #000000;
     background-color: #949090; }
 
-main p {
-  font-size: 0.5em;
-  text-align: center; }
-
 main form {
   width: 100%;
-  padding-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,9 +239,13 @@ main form {
     padding-left: 0.5em;
     padding-top: 1em; }
     main form .intro-contacto p {
-      font-size: larger; }
+      font-size: 1.5em;
+      text-align: center;
+      background-color: #ffc99d6e; }
   main form .mb-3 {
     width: 20rem; }
+    main form .mb-3 .btn {
+      background-color: #fff; }
 
 main .aves-title {
   width: 9em;
@@ -259,6 +265,8 @@ main section .pictures-container {
   main .main-section-home {
     flex-direction: row;
     justify-content: space-around; }
+    main .main-section-home .contenedor-b {
+      margin-top: 0; }
     main .main-section-home .frameHome {
       width: 400px; }
   main .carrousel {

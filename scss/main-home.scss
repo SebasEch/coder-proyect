@@ -2,34 +2,38 @@
 
 main {
     .main-section-home {
-        padding-top: 2.5em;
-        padding-bottom: 5em;
-        gap: 10px;
+        padding-top: $r;
+        padding-bottom: $r*2;
         display: flex;
         flex-direction: column;
-
-
 
         .contenedor-section {
             text-align: center;
 
             h3 {
-                padding-top: 0.5em;
+                padding-top: $r - 1;
+                font-size: $r;
+                
             }
 
             .frameHome {
 
                 @include box;
+                transition: all 0.3s;
 
 
                 &:hover {
                     filter: blur(2px);
-
+                    transition: all 0.3s;
+                    
                 }
             }
         }
+        .contenedor-b {
+            margin-top: $r*3;
+        }
     }
-
+    
     .carrousel {
         display: none;
 

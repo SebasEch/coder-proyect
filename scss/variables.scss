@@ -2,18 +2,26 @@
 // Variables
 
 $bgcolor: #6d4254;
-$bgcolorb: #ffc99dbd;
+$bgcolorb: #ffc99d6e;
 $bgcolor-secondary: #fff;
 $border: 10px solid #58585a;
 $box: 0px 4px 25px #383636;
+
+// Operaciones
+
+// r = relativa
+// a = absoluta
+
+$r: 2em;
+$a: 2px;
 
 // Mapas 
 
 // Mapas color de textos, links y titulos
 
 $colors: (
-    txtcolora: #c9c0f0,
-    txtcolorb: #8a4764
+    txtcolora: #000000,
+    txtcolorb: #4d484a
 );
 
 @each $item, $color in $colors {
@@ -25,22 +33,28 @@ $colors: (
 
 @mixin box {
     width: 350px;
-    border-radius: 15px;
+    border-radius: 16px;
     border: $border;
     box-shadow: $box;
-    padding: 2em;
+    padding: $r;
     background-color: $bgcolor-secondary;
     
+}
+
+@mixin box-g {
+    padding: $r - 1.5;
+    background-color: #fff;
+    border: $a*3 solid black;
 }
 
 // Extends 
 
 .img-frame {
     width: 200px;
-    border-radius: 15px;
+    border-radius: $a*8;
     border: $border;
     box-shadow: $box;
-    padding: 2em;
+    padding: $r;
     background-color: $bgcolor-secondary;
 
 }

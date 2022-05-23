@@ -12,6 +12,9 @@
                 width: 400px;
             }
         }
+        .carrousel {
+            display: block;
+        }
     }
 
 
@@ -35,7 +38,18 @@
 
     main {
         section {
+
+            padding: $r*2;
+            
             .aves {
+                gap: $r;
+
+                figure {
+                @include box-g
+                            
+                }
+                
+
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas:
                     "img1 img2 img3"
@@ -90,6 +104,11 @@
             }
 
             .productos {
+                
+                figure {
+                    @include box-g
+                }
+
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas:
                     "img1 img2 img3"

@@ -1,36 +1,32 @@
 @media screen and (min-width:860px) {
-
-
     // main home
 
     main {
         .main-section-home {
             flex-direction: row;
             justify-content: space-around;
-    
+
             .contenedor-section {
-                span{
+                span {
                     display: flex;
                     flex-direction: column;
                     margin-top: 0;
                 }
-        
-                
             }
-                   .contenedor-b {
-                       margin-top: 0;
-                   }
+
+            .contenedor-b {
+                margin-top: 0;
+            }
 
             .frameHome {
                 width: 400px;
             }
         }
-        
+
         .carrousel {
             display: block;
         }
     }
-
 
     // estilos mian about
 
@@ -46,7 +42,6 @@
             }
         }
     }
-
 
     // estilos galeria aves
 
@@ -109,17 +104,16 @@
             }
 
             .productos {
-                
+
                 figure {
                     @include box-g
                 }
 
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-areas:
-                    "img1 img2 img3"
-                    "img4 img4 img5"
-                    "img4 img4 img5"
-                    "img6 img7 img8";
+                grid-template-areas: "img1 img2 img3"
+                "img4 img4 img5"
+                "img4 img4 img5"
+                "img6 img7 img8";
 
 
                 .gallery-picture--p1 {

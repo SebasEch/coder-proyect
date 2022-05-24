@@ -1,20 +1,23 @@
 @keyframes backflip {
-    0% { transform: translatex(100%);
+    0% {
+        transform: translatex(100%);
         opacity: 0;
         transform: rotateZ(180deg);
     }
 
-    50% { transform: translatex(1%);
+    50% {
+        transform: translatex(1%);
         opacity: 100;
         transform: rotateZ(0deg);
-}
+    }
 }
 
 @keyframes rotar {
     from {
         transform: rotateY(0deg);
     }
-    to{
+
+    to {
         transform: rotateY(360deg);
     }
 }

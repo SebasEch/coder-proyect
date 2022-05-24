@@ -1,4 +1,3 @@
-
 // Estilo about 
 
 .main-about {
@@ -24,36 +23,37 @@
         .frameAbout {
             @extend .img-frame;
             width: 380px;
-             }
         }
     }
+}
 
-    .section-tabla {
-        width: 100%;
-        padding-bottom: $r;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.section-tabla {
+    width: 100%;
+    padding-bottom: $r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
         @include titleh2
     }
-        .tabla-about {
-            th{
-                padding: $r - 1;
-                border: $a*3 solid #000000;
-                text-align: center;
-                background-color: $bgcolor;
-            }
 
-            td{
-                padding: $r - 1;
-                margin: $r - 1.5;
-                border: $a*2 solid #000000;
-                background-color: $bgcolorb;
-            }
-
-
-
+    .tabla-about {
+        th {
+            padding: $r - 1;
+            border: $a*3 solid #000000;
+            text-align: center;
+            background-color: $bgcolor;
         }
+
+        td {
+            padding: $r - 1;
+            margin: $r - 1.5;
+            border: $a*2 solid #000000;
+            background-color: $bgcolorb;
+        }
+
+
+
     }
+}

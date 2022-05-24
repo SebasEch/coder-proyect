@@ -4,9 +4,6 @@ main {
         font-size: $r*1.5;
     }
 
-
-
-    
     section {
         .pictures-container {
             width: 100%;
@@ -18,7 +15,7 @@ main {
             figure {
                 gap: $r;
                 @include box-g;
-                            
+
                 .gallery-img {
                     width: 100%;
                 }

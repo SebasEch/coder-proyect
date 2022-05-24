@@ -1,10 +1,12 @@
 main {
-    .aves-title {
-        width: 9em;
-        margin: 1em auto;
-        border-radius: 5rem;
-
+    .titulo {
+        @extend h1;
+        font-size: $r*1.5;
     }
+
+
+
+    
     section {
         .pictures-container {
             width: 100%;
@@ -14,11 +16,13 @@ main {
             grid-gap: 10px;
 
             figure {
+                gap: $r;
+                @include box-g;
+                            
                 .gallery-img {
                     width: 100%;
                 }
             }
-
         }
     }
 }

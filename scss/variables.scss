@@ -1,7 +1,7 @@
 
 // Variables
 
-$bgcolor: #6d4254;
+$bgcolor: #9960326e;
 $bgcolorb: #ffc99d6e;
 $bgcolor-secondary: #fff;
 $border: 10px solid #58585a;
@@ -20,8 +20,8 @@ $a: 2px;
 // Mapas color de textos, links y titulos
 
 $colors: (
-    txtcolora: #000000,
-    txtcolorb: #ffffff
+    txtcolora: #1b1a1a,
+    txtcolorb: #4d4d4d
 );
 
 @each $item, $color in $colors {
@@ -44,7 +44,48 @@ $colors: (
 @mixin box-g {
     padding: $r - 1.5;
     background-color: #fff;
-    border: $a*3 solid black;
+    border: $r - 1.5 solid black;
+}
+
+@mixin titlesh1 {
+    text-align: center;
+    margin: $r auto;
+    margin-top: 0;
+    margin-bottom: $r - 1.5;
+    font-family: "Archivo Black";
+    font-size: $r*3;
+    text-shadow: 4px 8px 20px #525253;
+}
+
+@mixin titleh2 {
+    text-align: center;
+    margin: $r auto;
+    margin-top: 0;
+    margin-bottom: $r - 1.5;
+    font-family: "Josefin-sans";
+    font-size: $r*2;
+    font-weight: 800;
+    text-shadow: 4px 8px 15px #9a9aa1;
+
+}
+
+@mixin boton {
+    width: fit-content;
+    font-size: $r;
+    font-family: "Josefin-sans";
+    margin: $r - 1.5 auto;
+    padding: $r - 1.5;
+    font-weight: 800;
+    background-color: $bgcolorb;
+    border-radius: $r;
+    box-shadow: $box;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        transition-timing-function: ease;
+    }
 }
 
 // Extends 
@@ -56,5 +97,5 @@ $colors: (
     box-shadow: $box;
     padding: $r;
     background-color: $bgcolor-secondary;
-
 }
+

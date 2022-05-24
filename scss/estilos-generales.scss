@@ -8,7 +8,7 @@
 
 body {
     font-family: "Josefin sans";
-    background-image: url("../imagenes/fondos/zenbg-1.png"), url("../imagenes/fondos/zenbg-2.png");
+    background-image: url("../imagenes/fondos/texturebg-1.png"), url("../imagenes/fondos/texturebg-2.png");
     margin: 0;
     padding: 0;
     display: grid;
@@ -16,34 +16,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-// Estilo de titulos
-
-h1 {
-    text-align: center;
-    margin: $r auto;
-    margin-top: 0;
-    margin-bottom: $r - 1.5;
-    font-family: "Archivo Black";
-    font-size: $r*3;
-    text-shadow: 2px 8px 20px #525253;
-
-
-}
-
-hr {
-    width: 30%;
-    margin: $r auto;
-    border: $border;
-    border-radius: $r*20;
-    }
-
 // Estilo Nav
+
 header {
 
     nav {
         background-color: $bgcolorb;
         margin-bottom: $r;
-        
+
         .logo {
             width: $r*5;
             animation-name: backflip;
@@ -72,11 +52,10 @@ footer {
 
     background-image: url(../imagenes/wfooter.svg);
     background-size: cover;
-    
-    .rowF1 {
-     margin-top: $r*5;
 
-        
+    .rowF1 {
+        margin-top: $r*5;
+
         .footer-title {
             display: flex;
             justify-content: center;
@@ -98,7 +77,6 @@ footer {
             }
         }
 
-
         .redes-sociales {
             display: flex;
             justify-content: center;
@@ -114,8 +92,6 @@ footer {
                     color: #d1d3da
                 }
             }
-
-
         }
 
         .footer-logo {

@@ -20,18 +20,20 @@ main {
                 font-size: $r - 0.5;
                 text-align: center;
                 background-color: $bgcolorb;
-               
 
-        
+
+
             }
         }
 
         .mb-3 {
             width: 20rem;
 
-            .btn {
-                background-color: #fff;
-            }
+
         }
+    }
+
+    .boton--contacto {
+        @include boton
     }
 }

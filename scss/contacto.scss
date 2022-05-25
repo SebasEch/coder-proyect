@@ -15,10 +15,13 @@ main {
             padding-left: $r - 1.5;
             padding-top: $r - 1;
 
-            p {
+            h2 {
                 font-size: $r - 0.5;
                 text-align: center;
+                max-width: 80%;
+                padding: $r - 1.5;
                 background-color: $bgcolorb;
+                border-radius: 12px;
 
             }
         }
@@ -27,9 +30,16 @@ main {
             width: 20rem;
 
         }
-    }
 
-    .boton--contacto {
-        @include boton
+        .boton--contacto {
+            @include boton
+        }
+
+        p {
+            font-size: $r - 1;
+            text-align: center;
+            max-width: 30%;
+            color: #fff;
+        }
     }
 }

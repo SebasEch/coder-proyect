@@ -1,6 +1,5 @@
 @media screen and (min-width:860px) {
 
-
     // main home
 
     main {
@@ -16,8 +15,6 @@
                 font-size: $r - 0.5;
             }
 
-
-
             .contenedor-section {
                 span {
                     display: flex;
@@ -27,6 +24,10 @@
             }
 
             .contenedor-b {
+                margin-top: 0;
+            }
+
+            .contenedor-c {
                 margin-top: 0;
             }
 
@@ -174,13 +175,14 @@
             .mix {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas:
-                    "img1 img5 img3"
-                    "img4 img5 img2" 
-                    "img6 img5 img2"
-                    "img7 img8 img9";
+                    "img1 img5 img5"
+                    "img4 img5 img5"
+                    "img6 img3 img2"
+                    "img7 img8 img2"
+                    "img9 img9 img9"
+                    "img9 img9 img9";
 
-
-                 .gallery-picture--m1 {
+                .gallery-picture--m1 {
                     grid-area: img1;
                 }
 
@@ -216,9 +218,6 @@
                     grid-area: img8;
                 }
             }
-
-
         }
-
     }
 }

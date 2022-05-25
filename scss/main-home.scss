@@ -16,37 +16,36 @@ main {
 
         .contenedor-section {
 
-
-            span {
-                display: flex;
-                flex-direction: column;
-            }
-
             a {
                 text-decoration: none;
-                
-                .img-frame {
-                    width: 400px;
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+
+                    .boton {
+                        @include boton;
+                    }
+                }
+
+                .frameHome {
+                    @include box;
+                    transition: all 0.3s;
+                    transition-timing-function: ease;
+
+                    &:hover {
+                        filter: blur(1.5px);
+                    }
+
+                    .contenedor-a {
+                        margin-bottom: $r;
+                    }
+
+                    .contenedor-b {
+                        margin-bottom: $r;
+                    }
                 }
             }
-
-            .frameHome {
-                @include box;
-                transition: all 0.3s;
-                transition-timing-function: ease; 
-            }
-        }
-
-        .boton {
-            @include boton;
-        }
-
-        .contenedor-a {
-            margin-bottom: $r;
-        }
-
-        .contenedor-b {
-            margin-bottom: $r;
         }
     }
 
@@ -97,7 +96,6 @@ main {
                         &:hover {
                             transform: scale(1.2);
                             transition: all 0.5s;
-
                         }
                     }
 

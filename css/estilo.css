@@ -110,42 +110,42 @@ main .main-section-home {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap; }
-  main .main-section-home .contenedor-section span {
-    display: flex;
-    flex-direction: column; }
   main .main-section-home .contenedor-section a {
     text-decoration: none; }
-    main .main-section-home .contenedor-section a .img-frame, main .main-section-home .contenedor-section a .main-about .section-about .frameAbout, .main-about .section-about main .main-section-home .contenedor-section a .frameAbout {
-      width: 400px; }
-  main .main-section-home .contenedor-section .frameHome {
-    width: 350px;
-    border-radius: 16px;
-    border: 10px solid #58585a;
-    box-shadow: 0px 4px 25px #383636;
-    padding: 2em;
-    background-color: #fff;
-    transition: all 0.3s;
-    transition-timing-function: ease; }
-  main .main-section-home .boton {
-    width: fit-content;
-    font-size: 1.2em;
-    font-family: "Josefin-sans";
-    margin: 0.5em auto;
-    padding: 0.5em;
-    font-weight: 800;
-    background-color: #ffc99d6e;
-    border-radius: 2em;
-    box-shadow: 0px 4px 25px #383636;
-    transition: all 0.5s;
-    transition-timing-function: ease; }
-    main .main-section-home .boton:hover {
-      transform: scale(1.1);
-      transition: all 0.5s;
+    main .main-section-home .contenedor-section a span {
+      display: flex;
+      flex-direction: column; }
+      main .main-section-home .contenedor-section a span .boton {
+        width: fit-content;
+        font-size: 1.2em;
+        font-family: "Josefin-sans";
+        margin: 0.5em auto;
+        padding: 0.5em;
+        font-weight: 800;
+        background-color: #ffc99d6e;
+        border-radius: 2em;
+        box-shadow: 0px 4px 25px #383636;
+        transition: all 0.5s;
+        transition-timing-function: ease; }
+        main .main-section-home .contenedor-section a span .boton:hover {
+          transform: scale(1.1);
+          transition: all 0.5s;
+          transition-timing-function: ease; }
+    main .main-section-home .contenedor-section a .frameHome {
+      width: 350px;
+      border-radius: 16px;
+      border: 10px solid #58585a;
+      box-shadow: 0px 4px 25px #383636;
+      padding: 2em;
+      background-color: #fff;
+      transition: all 0.3s;
       transition-timing-function: ease; }
-  main .main-section-home .contenedor-a {
-    margin-bottom: 2em; }
-  main .main-section-home .contenedor-b {
-    margin-bottom: 2em; }
+      main .main-section-home .contenedor-section a .frameHome:hover {
+        filter: blur(1.5px); }
+      main .main-section-home .contenedor-section a .frameHome .contenedor-a {
+        margin-bottom: 2em; }
+      main .main-section-home .contenedor-section a .frameHome .contenedor-b {
+        margin-bottom: 2em; }
 
 main .carrousel {
   display: none; }
@@ -217,9 +217,8 @@ main section .pictures-container {
   padding: 10px;
   display: grid;
   grid-template-columns: 1 1fr;
-  grid-gap: 10px; }
+  grid-gap: 5px; }
   main section .pictures-container figure {
-    gap: 2em;
     padding: 0.5em;
     background-color: #fff;
     border: 0.5em solid black; }
@@ -283,29 +282,36 @@ main form {
     align-items: center;
     padding-left: 0.5em;
     padding-top: 1em; }
-    main form .intro-contacto p {
+    main form .intro-contacto h2 {
       font-size: 1.5em;
       text-align: center;
-      background-color: #ffc99d6e; }
+      max-width: 80%;
+      padding: 0.5em;
+      background-color: #ffc99d6e;
+      border-radius: 12px; }
   main form .mb-3 {
     width: 20rem; }
-
-main .boton--contacto {
-  width: fit-content;
-  font-size: 1.2em;
-  font-family: "Josefin-sans";
-  margin: 0.5em auto;
-  padding: 0.5em;
-  font-weight: 800;
-  background-color: #ffc99d6e;
-  border-radius: 2em;
-  box-shadow: 0px 4px 25px #383636;
-  transition: all 0.5s;
-  transition-timing-function: ease; }
-  main .boton--contacto:hover {
-    transform: scale(1.1);
+  main form .boton--contacto {
+    width: fit-content;
+    font-size: 1.2em;
+    font-family: "Josefin-sans";
+    margin: 0.5em auto;
+    padding: 0.5em;
+    font-weight: 800;
+    background-color: #ffc99d6e;
+    border-radius: 2em;
+    box-shadow: 0px 4px 25px #383636;
     transition: all 0.5s;
     transition-timing-function: ease; }
+    main form .boton--contacto:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+      transition-timing-function: ease; }
+  main form p {
+    font-size: 1em;
+    text-align: center;
+    max-width: 30%;
+    color: #fff; }
 
 @media screen and (min-width: 860px) {
   main h1, main .titulo {
@@ -320,6 +326,8 @@ main .boton--contacto {
       flex-direction: column;
       margin-top: 0; }
     main .main-section-home .contenedor-b {
+      margin-top: 0; }
+    main .main-section-home .contenedor-c {
       margin-top: 0; }
     main .main-section-home .frameHome {
       width: 400px; }
@@ -388,7 +396,7 @@ main .boton--contacto {
         grid-area: img8; }
     main section .mix {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "img1 img5 img3" "img4 img5 img2"  "img6 img5 img2" "img7 img8 img9"; }
+      grid-template-areas: "img1 img5 img5" "img4 img5 img5" "img6 img3 img2" "img7 img8 img2" "img9 img9 img9" "img9 img9 img9"; }
       main section .mix .gallery-picture--m1 {
         grid-area: img1; }
       main section .mix .gallery-picture--m2 {

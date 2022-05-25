@@ -24,11 +24,8 @@ $colors: (txtcolora: #1b1a1a,
 @each $item,
 $color in $colors {
     .color-#{$item} {
-        color: $color
+        color: $color;
     }
-
-    ;
-
 }
 
 // mixins 
@@ -40,7 +37,6 @@ $color in $colors {
     box-shadow: $box;
     padding: $r;
     background-color: $bgcolor-secondary;
-
 }
 
 @mixin box-g {
@@ -68,7 +64,6 @@ $color in $colors {
     font-size: $r*1;
     font-weight: 800;
     text-shadow: 4px 8px 15px #9a9aa1;
-
 }
 
 @mixin boton {

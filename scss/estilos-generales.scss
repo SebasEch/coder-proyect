@@ -23,8 +23,6 @@ header {
     .navbar {
         background-color: $bgcolorb;
         margin-bottom: $r;
-        
-
 
         .logo {
             width: $r*5;
@@ -41,7 +39,6 @@ header {
         .nav-item {
             font-size: $r - 0.5;
         }
-
 
         .dropdown-menu {
             background-color: $bgcolorb;
@@ -100,7 +97,6 @@ footer {
         .footer-logo {
             width: $r*7;
             transition: all 0.3s;
-
 
             &:hover {
                 width: $r*9;

@@ -10,10 +10,9 @@ main {
             padding: 10px;
             display: grid;
             grid-template-columns: 1 1fr;
-            grid-gap: 10px;
+            grid-gap: 5px;
 
             figure {
-                gap: $r;
                 @include box-g;
 
                 .gallery-img {

@@ -29,16 +29,10 @@ main {
                 @include box;
                 transition: all 0.3s;
                 transition-timing-function: ease;
-
-                &:hover {
-                    filter: blur(2px);
-                    transition: all 0.3s;
-                    transition-timing-function: ease;
-                }
             }
         }
 
-        .boton--gallery {
+        .boton {
             @include boton;
         }
 

@@ -1,10 +1,22 @@
 @media screen and (min-width:860px) {
+
+
     // main home
 
     main {
+        h1 {
+            font-size: $r*3;
+        }
+
         .main-section-home {
             flex-direction: row;
             justify-content: space-around;
+
+            .boton {
+                font-size: $r - 0.5;
+            }
+
+
 
             .contenedor-section {
                 span {
@@ -24,11 +36,15 @@
         }
 
         .carrousel {
+            h2 {
+                font-size: $r*2;
+            }
+
             display: block;
         }
     }
 
-    // estilos mian about
+    // estilos about
 
     .main-about {
         .section-about {
@@ -40,10 +56,17 @@
             .description {
                 width: 40%;
             }
+
         }
     }
 
-    // estilos galeria aves
+    .section-tabla {
+        h2 {
+            font-size: $r*2;
+        }
+    }
+
+    // estilos galerias
 
     main {
         section {
@@ -106,7 +129,7 @@
             .productos {
 
                 figure {
-                    @include box-g
+                    @include box-g;
                 }
 
                 grid-template-columns: repeat(3, 1fr);
@@ -114,7 +137,6 @@
                 "img4 img4 img5"
                 "img4 img4 img5"
                 "img6 img7 img8";
-
 
                 .gallery-picture--p1 {
                     grid-area: img1;
@@ -128,7 +150,7 @@
                     grid-area: img3;
                 }
 
-                .gallery-picture-ps4 {
+                .gallery-picture-p4 {
                     grid-area: img6;
                 }
 
@@ -148,6 +170,55 @@
                     grid-area: img8;
                 }
             }
+
+            .mix {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "img1 img5 img3"
+                    "img4 img5 img2" 
+                    "img6 img5 img2"
+                    "img7 img8 img9";
+
+
+                 .gallery-picture--m1 {
+                    grid-area: img1;
+                }
+
+                .gallery-picture--m2 {
+                    grid-area: img2;
+                }
+
+                .gallery-picture--m3 {
+                    grid-area: img3;
+                }
+
+                .gallery-picture-m4 {
+                    grid-area: img4;
+                }
+
+                .gallery-picture--m5 {
+                    grid-area: img6;
+                }
+
+                .gallery-picture--m6 {
+                    grid-area: img7;
+                }
+
+                .gallery-picture--m7 {
+                    grid-area: img9;
+                }
+
+                .gallery-picture--m8 {
+                    grid-area: img5;
+                }
+
+                .gallery-picture--m9 {
+                    grid-area: img8;
+                }
+            }
+
+
         }
+
     }
 }

@@ -45,7 +45,7 @@ $color in $colors {
 
 @mixin box-g {
     padding: $r - 1.5;
-    background-color: #fff;
+    background-color: $bgcolor-secondary;
     border: $r - 1.5 solid black;
 }
 
@@ -55,7 +55,7 @@ $color in $colors {
     margin-top: 0;
     margin-bottom: $r - 1.5;
     font-family: "Archivo Black";
-    font-size: $r*2.5;
+    font-size: $r*1.5;
     text-shadow: 4px 8px 20px #525253;
 }
 
@@ -65,7 +65,7 @@ $color in $colors {
     margin-top: 0;
     margin-bottom: $r - 1.5;
     font-family: "Josefin-sans";
-    font-size: $r*2;
+    font-size: $r*1;
     font-weight: 800;
     text-shadow: 4px 8px 15px #9a9aa1;
 
@@ -73,7 +73,7 @@ $color in $colors {
 
 @mixin boton {
     width: fit-content;
-    font-size: $r;
+    font-size: $r - 0.8;
     font-family: "Josefin-sans";
     margin: $r - 1.5 auto;
     padding: $r - 1.5;

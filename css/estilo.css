@@ -108,7 +108,6 @@ main .main-section-home {
   padding-bottom: 4em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
   main .main-section-home .contenedor-section span {
@@ -116,6 +115,8 @@ main .main-section-home {
     flex-direction: column; }
   main .main-section-home .contenedor-section a {
     text-decoration: none; }
+    main .main-section-home .contenedor-section a .img-frame, main .main-section-home .contenedor-section a .main-about .section-about .frameAbout, .main-about .section-about main .main-section-home .contenedor-section a .frameAbout {
+      width: 400px; }
   main .main-section-home .contenedor-section .frameHome {
     width: 350px;
     border-radius: 16px;
@@ -141,8 +142,10 @@ main .main-section-home {
       transform: scale(1.1);
       transition: all 0.5s;
       transition-timing-function: ease; }
+  main .main-section-home .contenedor-a {
+    margin-bottom: 2em; }
   main .main-section-home .contenedor-b {
-    margin-top: 6em; }
+    margin-bottom: 2em; }
 
 main .carrousel {
   display: none; }

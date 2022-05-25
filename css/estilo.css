@@ -240,7 +240,7 @@ main section .pictures-container {
       padding: 0.5em;
       background-color: #ffc99d6e; }
   .main-about .section-about .frameAbout {
-    width: 380px; }
+    width: 300px; }
 
 .section-tabla {
   width: 100%;
@@ -340,6 +340,8 @@ main form {
     align-items: center;
     justify-content: center;
     padding: 2em; }
+    .main-about .section-about .frameAbout {
+      width: 380px; }
     .main-about .section-about .description {
       width: 40%; }
   .section-tabla h2 {

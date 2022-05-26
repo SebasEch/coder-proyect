@@ -355,7 +355,7 @@ main form {
     .main-about .section-about .frameAbout {
       width: 380px; }
     .main-about .section-about .description {
-      max-width: 40%; }
+      min-width: 40%; }
   .section-tabla h2 {
     font-size: 4em; }
   main section {

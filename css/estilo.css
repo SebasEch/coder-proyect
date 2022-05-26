@@ -35,7 +35,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Josefin sans";
+  font-family: "Josefin Sans";
   background-image: url("../imagenes/fondos/texturebg-1.png"), url("../imagenes/fondos/texturebg-2.png");
   margin: 0;
   padding: 0;
@@ -51,13 +51,21 @@ header .navbar {
     animation-name: backflip;
     animation-duration: 2s;
     animation-timing-function: ease;
-    animation-delay: 0.2s; }
+    animation-delay: 0.5s; }
     header .navbar .logo:hover {
-      transform: rotateZ(-3deg); }
-  header .navbar .nav-item {
-    font-size: 1.5em; }
+      transform: rotateZ(-3deg);
+      animation-timing-function: ease;
+      animation-delay: 0.5s; }
+  header .navbar .nav-link {
+    font-family: "Archivo Black";
+    font-weight: 300;
+    font-size: 1.4em; }
+    header .navbar .nav-link:hover {
+      color: #fff !important; }
   header .navbar .dropdown-menu {
-    background-color: #ffc99d6e; }
+    width: fit-content;
+    background-color: #ffc99d6e;
+    font-family: "Archivo Black"; }
 
 footer {
   background-image: url(../imagenes/wfooter.svg);
@@ -240,7 +248,7 @@ main section .pictures-container {
       padding: 0.5em;
       background-color: #ffc99d6e; }
   .main-about .section-about .frameAbout {
-    width: 300px; }
+    width: 320px; }
 
 .section-tabla {
   width: 100%;
@@ -291,6 +299,10 @@ main form {
       border-radius: 12px; }
   main form .mb-3 {
     width: 20rem; }
+    main form .mb-3 .field {
+      width: 20rem; }
+    main form .mb-3 .form-label {
+      background-color: #ffc99d54; }
   main form .boton--contacto {
     width: fit-content;
     font-size: 1.2em;
@@ -343,7 +355,7 @@ main form {
     .main-about .section-about .frameAbout {
       width: 380px; }
     .main-about .section-about .description {
-      width: 40%; }
+      max-width: 40%; }
   .section-tabla h2 {
     font-size: 4em; }
   main section {

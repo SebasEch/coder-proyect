@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Josefin sans";
+    font-family: "Josefin Sans";
     background-image: url("../imagenes/fondos/texturebg-1.png"), url("../imagenes/fondos/texturebg-2.png");
     margin: 0;
     padding: 0;
@@ -29,19 +29,30 @@ header {
             animation-name: backflip;
             animation-duration: 2s;
             animation-timing-function: ease;
-            animation-delay: 0.2s;
+            animation-delay: 0.5s;
 
             &:hover {
                 transform: rotateZ(-3deg);
+                animation-timing-function: ease;
+                animation-delay: 0.5s;
+    
             }
         }
 
-        .nav-item {
-            font-size: $r - 0.5;
+        .nav-link {
+            font-family: "Archivo Black";
+            font-weight: 300;
+            font-size: $r - 0.6;
+
+            &:hover {
+                color: #fff !important;
+            }
         }
 
         .dropdown-menu {
+            width: fit-content;
             background-color: $bgcolorb;
+            font-family: "Archivo Black";
         }
     }
 }
